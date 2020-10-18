@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Yahtzee!</title>
+  </head>
+  <body>
+    <header>
+      <h1>Yahtzee!</h1>
+    </header>
+    <div class="dice-container">
+      <div class="die"></div>
+      <div class="die"></div>
+      <div class="die"></div>
+      <div class="die"></div>
+      <div class="die"></div>
+    </div>
+    <div class="controls">
+      <p id="rolls-left"></p>
+      <button id="roll-button">Roll</button>
+    </div>
+    <div class="score-sheet">
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Upper Section</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Ones</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Twos</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Threes</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Fours</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Fives</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Sixes</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Total</td>
+            <td class="score-column scored"></td>
+          </tr>
+          <tr>
+            <td>Bonus</td>
+            <td class="score-column scored"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <thead>
+          <tr>
+            <th colspan="2">Lower Section</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3 of a kind</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>4 of a kind</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Full House</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Small Straight</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Large Straight</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Yahtzee</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+          <tr>
+            <td>Chance</td>
+            <td><div class="score-column"></div></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <table>
+        <tbody>
+          <thead>
+            <tr>
+              <th colspan="2">Final Score</th>
+            </tr>
+          </thead>
+          <tr>
+            <td>Total of Upper Section</td>
+            <td class="score-column scored"></td>
+          </tr>
+          <tr>
+            <td>Total of Lower Section</td>
+            <td class="score-column scored"></td>
+          </tr>
+          <tr>
+            <td>Grand Total</td>
+            <td class="score-column scored"></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <footer>Made with 🧡 from Malaysia, Penang</footer>
+    <script src="index.js"></script>
+  </body>
+</html>

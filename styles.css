@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  text-align: center;
+  padding-top: 5%;
+}
+
+footer {
+  font-size: 0.7rem;
+  text-align: center;
+  padding-bottom: 5px;
+}
+
+/* Dice */
+
+.dice-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 5px;
+}
+
+.die {
+  height: 15vw;
+  max-height: 100px;
+  width: 15vw;
+  max-width: 100px;
+  border: 1px solid;
+  margin: 5px;
+  border-radius: 5%;
+  transition: 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.1s;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hold {
+  border: 2px solid;
+  background-color: lightgrey;
+  opacity: 0.13;
+}
+
+/* Controls */
+
+.controls {
+  text-align: center;
+}
+
+.controls button {
+  margin: 5px;
+  padding: 3px 8px;
+  border-radius: 5%;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Score Sheet */
+
+.score-sheet {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score-sheet td,
+.score-sheet table {
+  border: 0.5px solid;
+  padding: 3px;
+}
+
+.score-sheet table {
+  width: 80vw;
+  margin: 5px;
+}
+
+.score-sheet td {
+  width: 50%;
+  padding: 5px;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.score-column {
+  color: lightgrey;
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.score-column:hover {
+  color: black;
+}
+
+.scored {
+  color: black;
+  cursor: default;
+}
+
+/* Media Queries */
+
+@media (min-width: 700px) {
+  .dice-container {
+    margin: 15px;
+  }
+
+  .die {
+    font-size: 3rem;
+  }
+
+  .controls {
+    margin: 15px;
+    font-size: 1.5rem;
+  }
+
+  .controls button {
+    margin: 15px;
+    padding: 5px 15px;
+    font-size: 1.5rem;
+  }
+
+  .score-sheet table {
+    margin: 15px;
+    width: 60vw;
+  }
+
+  .score-sheet th {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
+  .score-sheet td {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+
+  footer {
+    font-size: 1rem;
+    padding-bottom: 10px;
+  }
+}
